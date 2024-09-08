@@ -4,20 +4,17 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class MainMenu extends JFrame {
+public class MainMenu extends JFrame
+{
 
-    public MainMenu() {
-        // Set up the main menu frame
+    public MainMenu() 
+    {
         setTitle("Main Menu");
-        setSize(800, 600); // Set the size of the main menu window
-        setLocationRelativeTo(null); // Center the window
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Close the application when the window is closed
-
-        // Create a panel for the main menu
+        setSize(800, 600); 
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(4, 1)); // Layout with 4 rows and 1 column
-
-        // Create buttons for each section
+        panel.setLayout(new GridLayout(4, 1)); 
         JButton studentButton = new JButton("Student");
         JButton facultyButton = new JButton("Faculty");
         JButton adminButton = new JButton("Admin");
@@ -72,7 +69,8 @@ public class MainMenu extends JFrame {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+     {
         // Run the main menu in the event dispatch thread for thread safety
         SwingUtilities.invokeLater(MainMenu::new);
     }
