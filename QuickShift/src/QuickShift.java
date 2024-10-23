@@ -79,11 +79,9 @@ class SplashScreen2 extends JFrame {
 class HomePage extends JFrame {
 
     public HomePage() {
-        // Set up JFrame properties
+        
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // Close only this window
         setExtendedState(JFrame.MAXIMIZED_BOTH); // Maximize the window
-
-        // Load background image
         URL bgImageUrl = getClass().getResource("/A1.png"); // Replace with your background image path
         ImageIcon backgroundImage = new ImageIcon(bgImageUrl);
         Image img = backgroundImage.getImage();
